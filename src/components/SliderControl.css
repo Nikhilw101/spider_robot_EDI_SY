@@ -1,0 +1,64 @@
+.slider-control {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .slider-group {
+    padding: 0 1rem;
+  }
+  
+  .slider-label {
+    color: #6b7280;
+    font-size: 0.75rem;
+    font-family: monospace;
+    text-transform: uppercase;
+  }
+  
+  .direction-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #6b7280;
+  }
+  
+  .direction-icon.active {
+    color: #3b82f6;
+  }
+  
+  .form-range {
+    height: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .form-range::-webkit-slider-thumb {
+    width: 1rem;
+    height: 1rem;
+    background-color: #3b82f6;
+    border: none;
+  }
+  
+  .form-range:disabled::-webkit-slider-thumb {
+    background-color: #6b7280;
+  }
+  
+  .reset-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    transition: all 0.2s;
+  }
+  
+  .reset-btn:hover:not(:disabled) {
+    background-color: #2563eb;
+  }
+  
+  .reset-btn:disabled {
+    background-color: #4b5563;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .status-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-family: monospace;
+  }

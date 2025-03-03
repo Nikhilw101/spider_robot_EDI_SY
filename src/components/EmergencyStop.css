@@ -1,0 +1,18 @@
+.emergency-btn {
+    border: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .emergency-btn:not(.active) {
+    background-color: #7f1d1d;
+    color: white;
+  }
+  
+  .emergency-btn.active {
+    background-color: #dc2626;
+    border-color: #f87171;
+  }
+  
+  .emergency-btn:active {
+    transform: scale(0.95);
+  }

@@ -1,0 +1,27 @@
+.control-pad {
+    max-width: 320px;
+  }
+  
+  .control-button {
+    border: none;
+    background-color: #4a5568;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  .control-button:not(.disabled):active,
+  .control-button.active {
+    background-color: #4299e1 !important;
+  }
+  
+  .control-button.disabled {
+    background-color: #2d3748;
+    color: #718096;
+    cursor: not-allowed;
+  }
+  
+  .status-text {
+    height: 64px;
+    font-family: monospace;
+    color: white;
+  }
