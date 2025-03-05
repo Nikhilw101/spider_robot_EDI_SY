@@ -7,12 +7,12 @@ const CameraFeed = ({ isEmergencyMode }) => {
   const cameraUrl = "https://images.unsplash.com/photo-1548407260-da850faa41e3"; 
 
   return (
-    <div className="camera-container rounded-3 overflow-hidden bg-black">
+    <div className="camera-container rounded-3 overflow-hidden bg-black ">
       <img 
         src={cameraUrl} 
         alt="Camera feed" 
-        className={`w-100 h-100 object-fit-cover ${isEmergencyMode ? 'opacity-50' : ''}`}
-      />
+        className={`w-100 h-8 object-fit-cover ${isEmergencyMode ? 'opacity-50' : ''}`}
+      />  
 
       {isEmergencyMode && (
         <div className="emergency-overlay d-flex align-items-center justify-content-center">

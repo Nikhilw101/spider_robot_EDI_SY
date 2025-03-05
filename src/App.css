@@ -22,6 +22,21 @@
   margin: 0;
 }
 
+/* Connection status message */
+.connection-message {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: -23px;
+  margin-bottom: 10px;
+}
+.connection-message.connected {
+  color: #28a745; /* Green for connected */
+}
+.connection-message.disconnected {
+  color: #dc3545; /* Red for disconnected */
+}
+
 .main-content {
   flex: 1;
   display: grid;
@@ -29,9 +44,16 @@
   gap: 1rem;
 }
 
+/* Mobile adjustments: reduce gap between camera feed and controller */
+@media (max-width: 767px) {
+  .main-content {
+    gap: 0.5rem; /* Reduced gap for mobile view */
+  }
+}
+
 .camera-section {
   position: relative;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .action-indicator {
@@ -129,3 +151,4 @@
     overflow-y: auto;
   }
 }
+
